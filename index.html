@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style> /*abre a parte do código em que programamos com CSS, que vai dar o estilo à tabela*/
+			table {
+				font-family: arial, sans-serif;  /*Tipo de letra do Título e do resto d página*/
+				border-collapse: collapse; /*Escolhe o tipo de barreiras entre as células*/
+				width: 100%; /*Define a largura da tabela na página do navegador*/
+			}  
+
+			th,td {
+				border: 2px solid black; /*Define a espessura das linhas da tabela*/
+				text-align: center; /*centraliza todo o texto na célula*/
+				padding: 10px; /*Define o preenchimento das células*/
+				height: 150px; /*define a altura de cada célula*/
+				width:100px; /*a largura de cada célula*/
+			}
+
+			tr,td,th:nth-child(even) {
+				background-color:  #d9d9d9; /*Define a cor de fundo das células*/
+			}
+
+			.texto1{color:red;} /*coloca todas as palavras que tiverem a referencia class="texto1" a vermelho*/
+			.texto2{color:green;} /*coloca todas as palavras que tiverem a referencia class="texto2" a verde*/
+			.texto3{color:blue;} /*coloca todas as palavras que tiverem a referencia class="texto3" a azulo*/
+			.texto4{color:purple;} /*coloca todas as palavras que tiverem a referencia class="texto4" a roxo*/
+
+		</style> 
+	</head>
+	<body>
+
+		<h2>Planta da Sala de Aula - Ano Letivo 19/20 - AIB</h2> <!--Com esta linha, definimos o título que aparece-->
+
+		<table> <!--vai introduzir todos os dados seguintes na tabela--> <!--todas as imgens que vão aparecer estão localizadas no meu computador-->
+			<tr> <!--abre uma nova linha-->
+				<th colspan="8"></th> <!--Saltam-se 8 colunas para aparecer o lugar do professor-->
+				<th>Professor</th> <!--Mete o nome do professor no quadriculo-->
+			</tr> <!--fecha a linha-->
+			<tr> <!--abre uma nova linha-->
+				<th> <!--dentro da nova linha faz uma coluna-->
+					<a href="images/nyckollas_brandao.jpg" target="blank"> <!--Hiperligação para a imagem grande do Nyckollas-->
+						<img src=images/nyckollas_brandao_passe.jpg   alt="Caricatura Nyckollas"> <!--Mostra a imagem pequena do Nyckollas; Mostra "Caricatura Nyckollas" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Nyckollas</p> <!--Coloca o nome Nyckollas por baixo da imagem-->
+					<p class="texto1">12º6ª nº20</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/andre_jesus.jpg" target="blank"> <!--Hiperligação para a imagem grande do André-->
+					<img src=images/andre_jesus_passe.jpg   alt="Caricatura André"> <!--Mostra a imagem pequena do André; Mostra "Caricatura André" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">André</p> <!--Coloca o nome André por baixo da imagem-->
+					<p class="texto1">12º6ª nº4</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/camily.jpg" target="blank"> <!--Hiperligação para a imagem grande da Camily-->
+						<img src=images/camily_passe.jpg   alt="Caricatura Camily"> <!--Mostra a imagem pequena do Camily; Mostra "Caricatura Camily" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Camily</p> <!--Coloca o nome Camily por baixo da imagem-->
+					<p class="texto1">12º2ª nº3</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/antonio.jpg" target="blank"> <!--Hiperligação para a imagem grande do António-->
+						<img src=images/antonio_passe.jpg   alt="Caricatura António"> <!--Mostra a imagem pequena do António; Mostra "Caricatura António" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">António</p> <!--Coloca o nome André por baixo da imagem-->
+					<p class="texto1">12º2ª nº2</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th rowspan="3">Corredor</th> <!--mete nas proximas 3 linhas uma coluna a dizer corredor-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/miriam.jpg" target="blank"> <!--Hiperligação para a imagem grande do Miriam-->
+						<img src=images/miriam_passe.jpg   alt="Caricatura Miriam"> <!--Mostra a imagem pequena do Miriam; Mostra "Caricatura Miriam" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Miriam</p> <!--Coloca o nome Miriam por baixo da imagem-->
+					<p class="texto1">12º6ª nº19</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/leonardo.jpg" target="blank"> <!--Hiperligação para a imagem grande do Leonardo-->
+						<img src=images/leonardo_passe.jpg   alt="Caricatura Leonardo"> <!--Mostra a imagem pequena do Leonardo; Mostra "Caricatura Leonardo" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Leonardo</p> <!--Coloca o nome Leonardo por baixo da imagem-->
+					<p class="texto1">12º6ª nº14</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/paulo.jpg" target="blank"> <!--Hiperligação para a imagem grande do Paulo-->
+						<img src=images/paulo_passe.jpg   alt="Caricatura Paulo"> <!--Mostra a imagem pequena do Paulo; Mostra "Caricatura Paulo" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Paulo</p> <!--Coloca o nome Paulo por baixo da imagem-->
+					<p class="texto1">12º2ª nº20</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/borges.png" target="blank"> <!--Hiperligação para a imagem grande do Francisco Borges-->
+						<img src=images/borges_passe.png  alt="Caricatura Francisco Borges"> <!--Mostra a imagem pequena do Francisco Borges; Mostra "Caricatura Francisco Borges" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto1">Francisco Borges</p> <!--Coloca o nome Francisco Borges por baixo da imagem-->
+					<p class="texto1">12º2ª nº13</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+			</tr> <!--fecha a linha-->
+			<tr> <!--abre uma nova linha-->
+				<th> <!--dentro da nova linha faz uma coluna-->
+					<a href="images/fialho.jpg" target="blank"> <!--Hiperligação para a imagem grande do Ricardo-->
+						<img src=images/fialho_passe.jpg   alt="Caricatura Ricardo"> <!--Mostra a imagem pequena do Ricardo; Mostra "Caricatura Ricardo" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Ricardo</p> <!--Coloca o nome Ricardo por baixo da imagem-->
+					<p class="texto2">12º2ª nº23</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/diogo.jpeg" target="blank"> <!--Hiperligação para a imagem grande do Diogo-->
+						<img src=images/diogo_passe.jpeg   alt="Caricatura Diogo"> <!--Mostra a imagem pequena do Diogo; Mostra "Caricatura Diogo" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Diogo</p> <!--Coloca o nome Diogo por baixo da imagem-->
+					<p class="texto2">12º2ª nº5</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/sebastiao.jpg" target="blank"> <!--Hiperligação para a imagem grande do Sebastião-->
+						<img src=images/sebastiao_passe.jpg   alt="Caricatura Sebastião"> <!--Mostra a imagem pequena do Sebastião; Mostra "Caricatura Sebastião" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Sebastião</p> <!--Coloca o nome Sebastião por baixo da imagem-->
+					<p class="texto2">12º2ª nº24</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/valiente.jpg" target="blank"> <!--Hiperligação para a imagem grande do Guilherme Valiente-->
+						<img src=images/valiente_passe.jpg   alt="Caricatura Valiente"> <!--Mostra a imagem pequena do Guilherme Valiente; Mostra "Caricatura Guilherme Valiente" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Guilherme Valiente</p> <!--Coloca o nome Guilherme Valiente por baixo da imagem-->
+					<p class="texto2">12º2ª nº8</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/cabo.jpg" target="blank"> <!--Hiperligação para a imagem grande do Guilherme Cabo-->
+						<img src=images/cabo_passe.jpg   alt="Caricatura Guilherme Cabo"> <!--Mostra a imagem pequena do Guilherme Cabo; Mostra "Caricatura Guilherme Cabo" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Guilherme Cabo</p> <!--Coloca o nome Guilherme Cabo por baixo da imagem-->
+					<p class="texto2">12º2ª nº7</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/francisco_almeida.jpg" target="blank"> <!--Hiperligação para a imagem grande do Francisco Almeida-->
+						<img src=images/francisco_almeida_passe.jpg   alt="Caricatura Francisco Almeida"> <!--Mostra a imagem pequena do Francisco Almeida; Mostra "Caricatura Francisco Almeida" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Francisco Almeida</p> <!--Coloca o nome Francisco Almeida por baixo da imagem-->
+					<p class="texto2">12º2ª nº6</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/henrique.jpg" target="blank"> <!--Hiperligação para a imagem grande do Henrique-->
+						<img src=images/henrique_passe.jpg   alt="Caricatura Henrique"> <!--Mostra a imagem pequena do Henrique; Mostra "Caricatura Henrique" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Henrique</p> <!--Coloca o nome Henrique por baixo da imagem-->
+					<p class="texto2">12º2ª nº9</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/xavier.jpg" target="blank"> <!--Hiperligação para a imagem grande do Xavier-->
+						<img src=images/xavier_passe.jpg   alt="Caricatura Xavier"> <!--Mostra a imagem pequena do Xavier; Mostra "Caricatura Xavier" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto2">Xavier</p> <!--Coloca o nome Xavier por baixo da imagem-->
+					<p class="texto2">12º6ª nº25<p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+			</tr> <!--fecha a linha-->
+			<tr> <!--abre uma nova linha-->
+				<th> <!--dentro da nova linha faz uma coluna-->
+					<a href="images/leal.jpg" target="blank"> <!--Hiperligação para a imagem grande do João Leal-->
+						<img src=images/leal_passe.jpg  alt="Caricatura João Leal"> <!--Mostra a imagem pequena do João Leal; Mostra "Caricatura João Leal" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">João Leal</p> <!--Coloca o nome João Leal por baixo da imagem-->
+					<p class="texto3">12º2ª nº15</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/correia.jpeg" target="blank"> <!--Hiperligação para a imagem grande do Miguel Correia-->
+						<img src=images/correia_passe.jpeg   alt="Caricatura Miguel Correia"> <!--Mostra a imagem pequena do Miguel Correia; Mostra "Caricatura Miguel Correia" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">Miguel Correia</p> <!--Coloca o nome Miguel Correia por baixo da imagem-->
+					<p class="texto3">12º2ª nº18</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/pedro_peres.jpg" target="blank"> <!--Hiperligação para a imagem grande do Pedro Peres-->
+						<img src=images/pedro_peres_passe.jpg   alt="Caricatura Pedro Peres"> <!--Mostra a imagem pequena do Pedro Peres; Mostra "Caricatura Pedro Peres" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">Pedro Peres</p> <!--Coloca o nome Pedro Peres por baixo da imagem-->
+					<p class="texto3">12º2ª nº21</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/silva.jpg" target="blank"> <!--Hiperligação para a imagem grande do João Silva-->
+						<img src=images/silva_passe.jpg   alt="Caricatura João Silva"> <!--Mostra a imagem pequena do João Silva; Mostra "Caricatura João Silva" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">João Silva</p> <!--Coloca o nome João Silva por baixo da imagem-->
+					<p class="texto3">12º2ª nº16</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				
+				<th class="texto3">Vazio</th>
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/azevedo.jpg" target="blank"> <!--Hiperligação para a imagem grande do João Azevedo-->
+						<img src=images/azevedo_passe.jpg   alt="Caricatura João Azevedo"> <!--Mostra a imagem pequena do João Azevedo; Mostra "Caricatura João Azevedo" quando não é possivel ver as imagens-->
+					</a>
+					<p class="texto3">João Azevedo</p> <!--Coloca o nome João Azevedo por baixo da imagem-->
+					<p class="texto3">12º2ª nº14</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/nuno.jpg" target="blank"> <!--Hiperligação para a imagem grande do Nuno-->
+						<img src=images/nuno_passe.jpg   alt="Caricatura Nuno"> <!--Mostra a imagem pequena do Nuno; Mostra "Caricatura Nuno" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">Nuno</p> <!--Coloca o nome Nuno por baixo da imagem-->
+					<p class="texto3">12º2ª nº19</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/daniel_dias.jpg" target="blank"> <!--Hiperligação para a imagem grande do Daniel-->
+						<img src=images/daniel_dias_passe.jpg   alt="Caricatura Daniel"> <!--Mostra a imagem pequena do Daniel; Mostra "Caricatura Daniel" quando não é possivel ver as imagens-->
+					</a> 
+					<p class="texto3">Daniel</p> <!--Coloca o nome Daniel por baixo da imagem-->
+					<p class="texto3">12º2ª nº4</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+			</tr> <!--fecha a linha-->
+			<tr> <!--abre uma nova linha-->
+				<th colspan="5"></th> <!--Saltam-se 5 colunas para aparecer a próxima fila de lugares-->
+				<th class="texto4">Vazio</th> <!--Mete o espaço do lugar vazio-->
+				<th class="texto4">Vazio</th> <!--Mete o espaço do lugar vazio-->
+				<th class="texto4">Vazio</th> <!--Mete o espaço do lugar vazio-->
+				<th> <!--adiciona mais uma coluna-->
+					<a href="images/pedro_filipe.jpg" target="blank"> <!--Hiperligação para a imagem grande do Pedro Filipe-->
+						<img src=images/pedro_filipe_passe.jpg   alt="Caricatura Pedro Filipe"> <!--Mostra a imagem pequena do Pedro Filipe; Mostra "Caricatura Pedro Filipe" quando não é possivel ver as imagens-->
+					</a>
+					<p class="texto4">Pedro Filipe</p> <!--Coloca o nome Pedro Filipe por baixo da imagem-->
+					<p class="texto4">12º2ª nº22</p> <!--Coloca a turma e o número por baixo do nome-->
+				</th> <!--Fecha a coluna-->
+			</tr> <!--fecha a linha-->
+		</table> <!--Fecha a tabela-->
+
+	</body>
+</html>
